@@ -1,6 +1,9 @@
 import axios from 'axios';
 import type { Task } from '../types/task';
 
+console.log('All environment variables:', import.meta.env);
+console.log('VITE_BACKEND_URL:', import.meta.env.VITE_BACKEND_URL);
+
 const BASE_URL = import.meta.env.VITE_BACKEND_URL + '/tasks';
 console.log('BASE_URL:', BASE_URL);
 
