@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoList from './components/TodoList';
 
+console.log('VITE_BACKEND_URL in index.tsx:', import.meta.env.VITE_BACKEND_URL, import.meta.env);
 
 const App: React.FC = () => {
     return (
