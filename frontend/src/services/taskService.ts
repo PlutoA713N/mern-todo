@@ -2,6 +2,7 @@ import axios from 'axios';
 import type { Task } from '../types/task';
 
 const BASE_URL = import.meta.env.VITE_BACKEND_URL + '/tasks';
+console.log('BASE_URL:', BASE_URL);
 
 export const getTasks = async (): Promise<Task[]> => {
     const res = await axios.get(BASE_URL);
