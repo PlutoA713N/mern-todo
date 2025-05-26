@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: backend
+    restart: unless-stopped
+    ports:
+      - 5000:5000
+    env_file:
+      - ./backend/.env  # ✅ Use backend-specific env
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: frontend
+    restart: unless-stopped
+    ports:
+      - 3000:80
+    env_file:
+      - ./frontend/.env  # ✅ Use frontend-specific env
+    depends_on:
+      - backend

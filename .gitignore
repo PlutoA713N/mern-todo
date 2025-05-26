@@ -1,0 +1,24 @@
+# Frontend
+frontend/node_modules
+frontend/.env
+frontend/package-lock.json
+frontend/dist
+
+# Backend
+backend/node_modules
+backend/.env
+backend/package-lock.json
+backend/dist
+
+# Docker
+docker-compose.override.yml
+
+# Editor and OS
+.vscode/
+.DS_Store
+
+# Logs
+*.log
+
+#idea
+.idea
